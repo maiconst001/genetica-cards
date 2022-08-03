@@ -170,11 +170,11 @@ const app = new Vue({
         musicTog: function () {
             let music = document.querySelector('.music')
             if (this.mute) {
-                music.pause()
-                this.mute = false
-            }else {
                 music.play()
                 this.mute = true
+            }else {
+                music.pause()
+                this.mute = false
             } 
         },
 
