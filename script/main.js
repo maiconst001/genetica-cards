@@ -2,7 +2,6 @@ const app = new Vue({
     el: "#app",
     mounted: function () {
         this.particle();
-        this.musicTog()
         var elems = document.querySelectorAll('.carousel');
         var instances = M.Carousel.init(elems, {
             duration: 400
