@@ -2,6 +2,7 @@ const app = new Vue({
     el: "#app",
     mounted: function () {
         this.particle();
+        this.musicTog()
         var elems = document.querySelectorAll('.carousel');
         var instances = M.Carousel.init(elems, {
             duration: 400
@@ -170,11 +171,11 @@ const app = new Vue({
         musicTog: function () {
             let music = document.querySelector('.music')
             if (this.mute) {
-                music.play()
-                this.mute = true
-            }else {
                 music.pause()
                 this.mute = false
+            }else {
+                music.play()
+                this.mute = true
             } 
         },
 
