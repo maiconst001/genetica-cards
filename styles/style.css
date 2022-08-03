@@ -1,0 +1,537 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+body, html, .main {
+    height: 100vh !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.13);
+}
+
+.main {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(232, 233, 157, 0.37);
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.123);
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+
+header .readEffect {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.readEffect {
+    font-size: 20px;
+    top: 100px;
+    position: fixed;
+    font-weight: bold;
+}
+
+
+.readEffect span {
+    margin: 1px;
+}
+
+.readToggle {
+    visibility: hidden;
+}
+
+
+
+
+header h1 {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    margin: 0px;
+}
+
+header .p2 {
+    width: 100%;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+header .icon {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+    border-radius: 100%;
+}
+
+.cartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    overflow: visible;
+    height: 100vh;
+    align-content: center;
+}
+
+
+/* control painel */
+.painel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 15px;
+    top: 130px;
+    z-index: 11;
+    border-radius: 4px;
+    padding: 3px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+}
+
+.painel .iconp {
+    width: 30px;
+    padding: 7px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+}
+
+.iconp img {
+    width: 100%;
+}
+
+
+/* noCartas */
+.noCartas {
+    display: none !important;
+}
+
+/* carrousel */
+.carousel a {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+.carrouselin {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-item img {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.carta {
+    background-color: black;
+    transition: all 500ms linear;
+    background-position: center;
+    background-size: 100%;
+    padding: 10px;
+    width: 13vw;
+    min-width: 100px;
+    height: 20vw;
+    min-height: 150px;
+    border-radius: 4px;
+    margin: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backface-visibility: hidden;
+    user-select: none;
+    pointer-events: none;
+    max-width: 150px;
+    max-height: 200px;
+    position: relative;
+}
+
+.one {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.StartRight {
+    animation: startr1 1500ms ease;
+}
+
+@keyframes startr1 {
+    from {
+        transform: translate(-800px, -800px) rotate(-360deg);
+    }
+}
+
+.StartLeftbottom {
+    animation: start2 1500ms ease;
+}
+
+@keyframes start2 {
+    from {
+        transform: translate(800px, -800px) rotate(360deg);
+    }
+}
+.StartRightbottom {
+    animation: startr3 1500ms ease;
+}
+
+@keyframes startr3 {
+    from {
+        transform: translate(-800px, 800px) rotate(-360deg);
+    }
+}
+
+.StartLefttop {
+    animation: start4 1500ms ease;
+}
+
+@keyframes start4 {
+    from {
+        transform: translate(800px, 800px) rotate(360deg);
+    }
+}
+
+.cartas .c1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.closecard {
+    transform: rotateY(180deg);
+}
+
+.contentClosexard {
+    transform: rotateY(0deg) !important;   
+}
+
+
+.cartas .ccontent  {
+    transform: rotateY(-180deg);
+}
+
+.cartas .ccontent .content {
+    background-image: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+}
+
+.carta .content {
+    border: 1px solid rgba(128, 128, 128, 0.164);
+    width: 100%;
+    height: 90%;
+    background-image: url('../images/gene.png');
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.footerc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* particlesJS */
+.particlesJS {
+    position: fixed;
+    top: 10%;
+    left: 0px;
+    width: 100%;
+    height: 90%;
+}
+
+/* gainEfect */
+
+.gainEfect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-size: 80px;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.555);
+    color: rgb(255, 123, 0);
+    font-weight: bolder;
+    overflow: hidden;
+    width: 100%;
+    display: none;
+}
+.gainsAll {
+    display: flex;
+    position: absolute;
+}
+
+.out-gain {
+    width: 15vw;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    pointer-events: none;
+}
+
+
+.gainzero {
+    position: absolute;
+    display: none
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.effectGainLatter {
+    animation: gain 1000ms ease-in;
+    font-family: 'Josefin Sans', sans-serif !important;
+    width: 90px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+@keyframes gain {
+    from {
+        transform: translateY(calc((102vh / 2) * -1));
+    }
+}
+
+.button-restart {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    left: 0px;
+    bottom: -200px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-restart button {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    animation: restart 1s linear alternate infinite;
+} 
+
+@keyframes restart {
+    from {
+        transform: scale(.90);
+    }
+}
+
+
+@media (max-width: 570px) {
+    
+}
+
+
+/* startGame */
+.startGame {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 5px 30px;
+}
+
+.startGame button {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    background-color: rgb(196, 99, 75);
+    border: none;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.452);
+    border-radius: 10px 0px;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+
+    animation: btns 600ms linear infinite alternate;
+}
+
+@keyframes btns {
+    from {
+        transform: scale(.95);
+    }
+}
+
+/* removing card */
+.removing {
+    animation: rm 2s linear;
+}
+
+@keyframes rm {
+    to {
+        transform: translate(0px, 1600px) rotate(360deg);
+    }
+}
+
+/* opacityCard */
+
+.opacityCard {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/*help */
+.help {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 20;
+}
+
+.help #menu .material-icons{
+    font-size: 10px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.help img {
+    width: 23px;
+}
+
+.tap-target-content {
+    padding-left: 70px !important;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.tap-target-content h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tap-target-content p {
+    text-align: center;
+    font-size: 13px !important;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width: 790px) {
+    .help {
+        display: flex !important;
+        text-align: center;
+        justify-content: center;
+        right: calc(50% - 20px);
+        bottom: 80px;
+    }
+
+    .tap-target-content {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tap-target-content p {
+        max-width: 400px;
+    }
+
+    .out-gain {
+        font-size: 70px;
+        width: 70px;
+    }
+}
+
+
+/* media */
+@media (max-width: 500px) {
+    
+    .out-gain {
+        font-size: 60px;
+        width: 50px;
+    }
+    .tap-target-content p {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 445px) {
+    .painel {
+        top: 100px;
+    }
+
+    .out-gain {
+        font-size: 40px;
+        width: 40px;
+    }
+
+    .carta {
+        min-width: 80px !important;
+        min-height: 100px !important;
+    }
+
+    .carta * {
+        font-size: 12px !important;
+    }
+}
