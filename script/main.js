@@ -39,7 +39,7 @@ const app = new Vue({
                 resp: 'Trissomia do cromossomo 21',
                 help: 'Normalmente, essa síndrome ocorre nos bebês das gestantes acima de 40 anos de idade'
             },
-            /*{
+            {
                 quest: 'Síndrome de Klinefelter',
                 resp: 'Cópia extra do cromossomo X',
                 help: 'é uma condição genética bem rara que só afeta homens'
@@ -74,7 +74,7 @@ const app = new Vue({
                 quest: 'Síndrome de Edwards',
                 resp: 'trissomia do cromossomo 18',
                 help: 'Os sintomas incluem baixo peso ao nascer, cabeça pequena de formato anormal e defeitos congênitos em órgãos, muitas vezes fatais'
-            },*/
+            },
         ],
 
         historic_card: [],
