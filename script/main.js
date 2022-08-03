@@ -30,7 +30,7 @@ const app = new Vue({
     data: {
         mesage: 'Olá, Seja bem vindo!',
         gainMessage: 'vitória',
-        mute: true,
+        mute: false,
 
         gainNum: 0,
         game_data: [
