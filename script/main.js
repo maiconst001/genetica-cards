@@ -1,6 +1,14 @@
 const app = new Vue({
     el: "#app",
     mounted: function () {
+        //alert(;)
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            this.vhScrean.height = 'calc(100vh - (100vh * 0.08))'
+        }
+
+        
+    
         this.getRec()
         this.alterBackMain()
         this.particle();
@@ -31,7 +39,9 @@ const app = new Vue({
     },
 
     data: {
-
+        vhScrean: {
+            height: '100vh'
+        }, 
         startStyle: {
             display: 'flex'
         },
