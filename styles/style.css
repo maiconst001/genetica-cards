@@ -318,7 +318,9 @@ li div {
     align-content: center;
 }
 
-
+.carousel {
+    z-index: 1;
+}
 .carrouselin {
     display: flex;
     align-items: center;
