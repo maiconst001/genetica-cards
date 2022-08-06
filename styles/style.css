@@ -582,6 +582,8 @@ li div {
     padding: 5px 30px;
     top: 0px;
     left: 0px;
+    border: 2px solid red;
+    z-index: 100;
 }
 
 .startGame button {
