@@ -705,7 +705,7 @@ li div {
         padding: 30px;
     }
     .card-info .content-view {
-        font-size: 12px;
+        font-size: 11px !important;
         
     }
 
