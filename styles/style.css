@@ -705,7 +705,7 @@ li div {
         padding: 30px;
     }
     .card-info .content-view {
-        font-size: 13px;
+        font-size: 12px;
         
     }
 
@@ -736,11 +736,11 @@ li div {
     }
 
     .carta * {
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
 
     .card-info .content-view {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
@@ -757,7 +757,7 @@ li div {
 @media (max-width: 345px) {
 
     .card-info .content-view {
-        font-size: 11px;
+        font-size: 10px;
     }
 }
 
